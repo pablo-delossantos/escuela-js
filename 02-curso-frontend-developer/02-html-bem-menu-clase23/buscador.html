@@ -24,6 +24,20 @@
   .header__menu{
     margin-right: 30px;
   }
+  .header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+  }
+  .header__menu--profile{
+    margin-right: 8px;
+    width: 40px;
+  }
+
 </style>
 <body>
   <header class="header">
@@ -33,6 +47,10 @@
         <img src="user-profile.png" alt="icono de usuario">
         <p>Perfil</p>
       </div>
+      <ul>
+        <li><a href="/">Cuenta</a></li>
+        <li><a href="/">Cerrar Sesión</a></li>
+      </ul>
     </div>
   </header>
 </body>
