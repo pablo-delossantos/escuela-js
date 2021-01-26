@@ -46,6 +46,14 @@
       transform: scale(1.5);
       opacity: 1;
     }
+    .carousel-item__img{
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .carousel-item__details {
+      background: linear-gradient(to top, rgba (0, 0, 0, 0.9) 0%, rgba (0, 0, 0, 0) 100%);
+    }
 </style>
 
 <body>
@@ -55,7 +63,8 @@
               <img class="carousel-item__img" src="https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="People">
               <div class="carousel-item__details">
                 <div>
-                  <img src="../icons/play-icon.png" alt="">                  
+                  <img src="../icons/play-icon.png" alt="Play">                  
+                  <img src="../icons/plus-icon.png" alt="Plus">                  
                 </div>
               </div>
               <p class="carousel-item__details--title">Título descriptivo</p>
