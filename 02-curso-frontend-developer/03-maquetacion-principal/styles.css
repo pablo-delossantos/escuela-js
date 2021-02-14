@@ -62,13 +62,41 @@ body {
   width: 40px;
 }
 
-.main {
+.error-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 300px;
   border-radius: 0px 0px 40px 40px;
+}
+
+.error-container h2{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin: 10px 0px;
+}
+
+.error-container p{
+  margin: 10px 0px;
+  color: white;
+}
+
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1.5s;
 }
 
 .main__title {
@@ -221,14 +249,4 @@ body {
     align-items: flex-start;
     flex-direction: column;
   }
-}
-::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-::-webkit-scrollbar{
-  width: 8px;
-  height: 8px;
-  background: rgba(255,255,255,0.4);
-  border-radius: 4px;
 }
