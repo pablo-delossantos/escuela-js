@@ -5,28 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio sesión</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<style>
-  /* Recordar: BEM = Bloque Elemento Modificador */
-  body{
-    font-family: 'Mulish', sans-serif;
-    margin: 0 auto;
-    background-color: #8f57fd;
-  }
-  .header{
-    background-color: #8f57fd;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__img{
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-</style>
 <body>
   <header class="header">
     <img class="header__img" src="logo-platzi-video-BW2.png" alt="logo Platzi Video">
@@ -35,8 +15,8 @@
     <section class="login__container">
       <h2>Inicia sesión</h2>
       <form class="login__container--form">
-        <input class="imput" type="text" placeholder="correo">
-        <input class="imput" type="password" placeholder="contraseña">
+        <input class="input" type="text" placeholder="correo">
+        <input class="input" type="password" placeholder="contraseña">
         <button class="button">Iniciar sesión</button>
         <div class="login__container--remember-me">
           <label>
@@ -49,7 +29,7 @@
         <div><img src="./assets/google-icon.png" alt="Google">Inicia sesión con Google</div>
         <div><img src="./assets/twitter-icon.png" alt="Google">Inicia sesión con Twitter</div>
       </section>
-      <p class="login__container--rigister">No tienes ninguna cuenta <a href="">Regístrate</a></p>
+      <p class="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a></p>
     </section>
   </section>
   <footer class="footer">
