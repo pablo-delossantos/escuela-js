@@ -80,6 +80,19 @@ body{
 .login__container--register a:hover{
   text-decoration: underline;
 }
+.login__container--inicio-sesion{
+  display: flex;
+  justify-content: center;
+}
+.login__container--inicio-sesion a{
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.login__container--inicio-sesion a:hover{
+  text-decoration: underline;
+}
+
 .input{
   background-color: transparent;
   border-top: 0px;
