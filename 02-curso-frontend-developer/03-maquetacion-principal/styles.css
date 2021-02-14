@@ -222,3 +222,13 @@ body {
     flex-direction: column;
   }
 }
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
