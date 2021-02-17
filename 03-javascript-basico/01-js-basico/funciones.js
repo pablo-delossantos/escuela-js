@@ -1,4 +1,4 @@
-// Funciones Declarativas
+// Funciones Declarativas.
 
 function miFuncion() {
   return 3;
