@@ -13,6 +13,15 @@ var resultado = function(usuario, cpu){
     case (usuario === tijeras && cpu === papel):
       console.log ("El usuario ganó con " + tijeras);
       break;
+    case (usuario === piedra && cpu === papel):
+      console.log ("El CPU ganó");
+      break;
+    case (usuario === papel && cpu === tijeras):
+      console.log ("El CPU ganó");
+      break;
+    case (usuario === papel && cpu === tijeras):
+      console.log ("El CPU ganó");
+      break;
     case (usuario === cpu):
       console.log ("Es un empate");
       break;
