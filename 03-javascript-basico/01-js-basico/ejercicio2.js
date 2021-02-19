@@ -1,49 +1,22 @@
-var piedra = "piedra";
-var papel = "papel";
-var tijeras = "tijeras";
+/* Piedra: 0, papel: 1 o tijera: 2
+ parámetros: p = persona, pc = computadora */
 
-var resultado = function(usuario, cpu){
-  switch (piedra) {
-    case (usuario === piedra && cpu === tijeras):
-      resultado = "Ganó el usuario";
-      break;
-    case (usuario === piedra && cpu === papel):
-      resultado = "Ganó el CPU"
-      break;
-    case (usuario === piedra && cpu === piedra):
-      resultado = "Es un empate";
-      break;
-    default:
-      console.log ("No se jugó");
-  };
-  switch (papel){
-    case (usuario === papel && cpu === piedra):
-      resultado = "Ganó el usuario";
-      break;
-    case (usuario === papal && cpu === tijeras):
-      resultado = "Ganó el CPU";
-      break;
-    case (usuario === papel && cpu === papel):
-      resultado = "Es un empate";
-      break;
-    default:
-      console.log ("Esto no da para más");
-  }
-  switch (tijeras) {
-    case (usuario === tijeras && cpu === papel):
-      resultado = "Ganó el usuario";
-      break;
-    case (usuario === tijeras && cpu === piedra):
-      resultado = "Ganó el CPU";
-      break;
-    case (usuario === tijeras && cpu === tijeras):
-      resultado = "Es un empate";
-      break;
+function jugar(p, pc) {
+  switch (true) {
+      case p === pc:
+          console.log("Empate");
+          break;
+      case p === 0 && pc !== 1:
+          console.log("Ganas");
+          break;
+      case p === 1 && pc !== 2:
+          console.log("Ganas");
+          break;
+      case p === 2 && pc !== 0:
+          console.log("Ganas");
+          break;
       default:
-        console.log ("Esto se fue al choto");
+          console.log("Pierdes");
+          break;
   }
 }
-
-resultado (piedra, papel); //Ingresar en el primer valor la elección del usuario y en el segundo la elección del CPU
-
-//Resolver bien el ejercicio
