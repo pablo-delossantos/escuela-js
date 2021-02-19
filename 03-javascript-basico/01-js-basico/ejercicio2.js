@@ -3,30 +3,44 @@ var papel = "papel";
 var tijeras = "tijeras";
 
 var resultado = function(usuario, cpu){
-  switch (resultado) {
+  switch (piedra) {
     case (usuario === piedra && cpu === tijeras):
-      console.log ("El usuario ganó con " + piedra);
-      break;
-    case (usuario === tijeras && cpu === papel):
-      console.log ("El usuario ganó con " + papel);
-      break;
-    case (usuario === tijeras && cpu === papel):
-      console.log ("El usuario ganó con " + tijeras);
+      resultado = "Ganó el usuario";
       break;
     case (usuario === piedra && cpu === papel):
-      console.log ("El CPU ganó");
+      resultado = "Ganó el CPU"
       break;
-    case (usuario === papel && cpu === tijeras):
-      console.log ("El CPU ganó");
-      break;
-    case (usuario === papel && cpu === tijeras):
-      console.log ("El CPU ganó");
-      break;
-    case (usuario === cpu):
-      console.log ("Es un empate");
+    case (usuario === piedra && cpu === piedra):
+      resultado = "Es un empate";
       break;
     default:
-      console.log ("El CPU ganó");
+      console.log ("No se jugó");
+  };
+  switch (papel){
+    case (usuario === papel && cpu === piedra):
+      resultado = "Ganó el usuario";
+      break;
+    case (usuario === papal && cpu === tijeras):
+      resultado = "Ganó el CPU";
+      break;
+    case (usuario === papel && cpu === papel):
+      resultado = "Es un empate";
+      break;
+    default:
+      console.log ("Esto no da para más");
+  }
+  switch (tijeras) {
+    case (usuario === tijeras && cpu === papel):
+      resultado = "Ganó el usuario";
+      break;
+    case (usuario === tijeras && cpu === piedra):
+      resultado = "Ganó el CPU";
+      break;
+    case (usuario === tijeras && cpu === tijeras):
+      resultado = "Es un empate";
+      break;
+      default:
+        console.log ("Esto se fue al choto");
   }
 }
 
