@@ -20,3 +20,5 @@ function jugar(p, pc) {
           break;
   }
 }
+
+jugar(1, 0)
