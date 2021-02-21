@@ -22,3 +22,9 @@ encuentraArticulo
 articulos.forEach(function(articulo){
     console.log(articulo.nombre)
 });
+
+//_______________
+//Método some. Hace una validación de verdadero o falso.
+var articulosBaratos = articulos.some(function(articulo){
+    return articulo.precio <= 2000;
+});
