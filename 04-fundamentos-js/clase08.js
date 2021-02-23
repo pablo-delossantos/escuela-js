@@ -18,3 +18,11 @@ function imprimirNombreEnMayusculas(persona) {
 
 imprimirNombreEnMayusculas(pablo)
 imprimirNombreEnMayusculas(juan)
+
+function cumpleanos(persona) {
+    return {
+        ...persona,
+        edad: persona.edad + 1
+    }
+}
+
