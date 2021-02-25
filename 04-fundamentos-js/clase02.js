@@ -6,6 +6,7 @@ var apellidoEnMinusculas = apellido.toLowerCase()
 var primeraLetraDelNombre = nombre.charAt(0)
 var cantidadDeLetrasDelNombre = nombre.length //=> Atributo length
 
+//Interpolación de texto con comillas francesas
 var nombreCompleto = `${nombre} ${apellido.toUpperCase()}` //Podemos escribir código dentro de las llaves
 
 //Acceder a un sub string (un string dentro de un string)

@@ -2,8 +2,8 @@ var pablo = {
     nombre: 'Pablo',
     apellido: 'de los Santos',
     edad: 42,
-    disenador: false,
-    cocinero: true,
+    disenador: true, //Booleano
+    cocinero: false,
     dj: false,
     cantante: false,
     guitarrista: false,

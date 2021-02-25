@@ -46,7 +46,7 @@ function imprimirProfesiones(persona) {
     }
 }
 
-const MAYORIA_DE_EDAD = 18 //Es una constante
+const MAYORIA_DE_EDAD = 18 //Para indicar que usamos una constante La usamos para ser mas claros y evitar el 'magic number'
 
 function esMayorDeEdad(persona){
     return persona.edad >= MAYORIA_DE_EDAD

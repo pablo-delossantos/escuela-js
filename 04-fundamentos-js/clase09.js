@@ -11,5 +11,5 @@ var pablo = {
 
 var otraPersona = {
     nombre: 'Pablo'
-} //Se crea un nuevo objeto que ocupa otro lugar en memoria ram
+} //Se crea un nuevo objeto que ocupa otro lugar en memoria ram, por eso cuando comparamos la funcion, nos devuelve false.
 
