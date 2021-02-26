@@ -52,6 +52,7 @@ const MAYORIA_DE_EDAD = 18
 //     return persona.edad >= MAYORIA_DE_EDAD
 // } //Función anónima
 
+//Es una funcion que le pasamos un objeto y nos retorna si esa edad es mayor o igual a la constante mayoría de edad.
 const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
 
 function imprimirSiEsMayorDeEdad(persona) {
@@ -66,5 +67,4 @@ function permitirAcceso(persona) {
     if(!esMayorDeEdad(persona)) {
         console.log('ACCESO DENEGADO')
     } //El signo ! niega la condición
-
 }
