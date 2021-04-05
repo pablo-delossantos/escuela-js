@@ -40,7 +40,7 @@ var personas = [sacha, alan, martin, dario, vicky, paula, pablo]
 
 const esAlta = ({ altura }) => altura > 1.8
 
-var personasAltas = personas.filter(esAlta)
+var personasAltas = personas.filter(esAlta) //Filter devuelve un nuevo array
 // var personasAltas = personas.filter(function (persona) {
 //     return persona.altura > 1.8
 // })
