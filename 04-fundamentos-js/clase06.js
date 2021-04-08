@@ -18,6 +18,6 @@ function imprimirNombreEnMayusculas( {nombre} ) {
 
 imprimirNombreEnMayusculas(pablo)
 imprimirNombreEnMayusculas(myrna)
-imprimirNombreEnMayusculas( {nombre: 'Juan Manuel'}) //Podemos definir un objeto en el parámetro cuando invocamos la función
+//imprimirNombreEnMayusculas( {nombre: 'Juan Manuel'}) Podemos definir un objeto en el parámetro cuando invocamos la función
 // imprimirNombreEnMayusculas( ) si esta vació da error
 // imprimirNombreEnMayusculas( {apellido: 'Villulla'} ) si le pasamos otro parámetro da error

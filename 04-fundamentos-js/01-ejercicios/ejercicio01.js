@@ -4,15 +4,16 @@ var pablo = {
     edad: 42
 }
 
-var juan = {
-    nombre: 'Juan Manuel',
-    apellido: 'Villulla',
+var myrna = {
+    nombre: 'Myrna',
+    apellido: 'Cappiello',
     edad: 38
 }
 
-function imprimirNombreYEdad({nombre, edad}) {
-    console.log(`Hola, me llamo ${nombre} y tengo ${edad} años`)
+function imprimirNombreYEdad(persona){
+    var {nombre, edad} = persona
+    console.log(`Hola, me llamo ${nombre} y tengo ${edad} años.`)
 }
 
 imprimirNombreYEdad(pablo)
-imprimirNombreYEdad(juan)
+imprimirNombreYEdad(myrna)
