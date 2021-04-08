@@ -2,41 +2,41 @@ var pablo = {
     nombre: 'Pablo',
     apellido: 'de los Santos',
     edad: 42,
-    disenador: true, //Booleano
+    ingeniero: false,
     cocinero: false,
-    dj: false,
     cantante: false,
-    guitarrista: false,
-    drone: false
+    dj: false,
+    disenador: true,
+    boxeador: true,
 }
 
-function imprimirProfesiones(persona) {
+function imprimirProfesiones(persona){
     console.log(`${persona.nombre} es:`)
-
-    if (persona.disenador) {
-        console.log('Diseñador') //Solo se tiene que hacer si es true
+    
+    if (persona.ingeniero)  {
+        console.log('Ingeniero')
     } else {
-        console.log('No es diseñador')
+        console.log('No es Ingeniero')
     }
-
-    if (persona.cocinero) {
+    
+    if (persona.cocinero)  {
         console.log('Cocinero')
     }
-
-    if (persona.dj) {
-        console.log('Dj')
-    }
-
-    if (persona.cantante) {
+    
+    if (persona.cantante)  {
         console.log('Cantante')
     }
-
-    if (persona.guitarrista) {
-        console.log('Guitarrista')
+    
+    if (persona.dj)  {
+        console.log('DJ')
     }
-
-    if (persona.drone) {
-        console.log('Piloto de drone')
+    
+    if (persona.disenador)  {
+        console.log('Diseñador')
+    }
+    
+    if (persona.boxeador)  {
+        console.log('Boxeador')
     }
 }
 
