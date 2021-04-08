@@ -7,30 +7,25 @@ var pablo = {
 
 console.log(`Al inicio del año ${pablo.nombre} pesa ${pablo.peso} kg.`)
 
-// function aumentarDepeso (persona) {
-//     return persona.peso += 0.3
-// }
-
 const INCREMENTO_PESO = 0.3
 const DIAS_DEL_ANO = 365
 
 const aumentarDePeso = persona => persona.peso += INCREMENTO_PESO
 const adelgazar = persona => persona.peso -= INCREMENTO_PESO
 const comeMucho = () => Math.random() < 0.3
-const realizaDeporte = () => Math.random() < 0.4
+const realizaDeporte = () => Math.random() > 0.4
 
 const META = pablo.peso - 3
 var dias = 0
 
-//El ciclo while se va a repetir mientras la condicion sea verdadera y se cumpla.
 while (pablo.peso > META) {
     if (comeMucho()) {
         aumentarDePeso(pablo)
-    }    
+    }
     if (realizaDeporte()) {
         adelgazar(pablo)
     }
     dias += 1
 }
 
-console.log(`Pasaron ${dias} días hasta que ${pablo.nombre} adelgazó 3kg.`)
+console.log(`Pasaron ${dias} dias hasta que ${pablo.nombre} adelgazó 3 kg`)
