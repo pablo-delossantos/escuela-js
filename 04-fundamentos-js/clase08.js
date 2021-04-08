@@ -4,9 +4,9 @@ var pablo = {
     edad: 42
 }
 
-var juan = {
-    nombre: 'Juan Manuel',
-    apellido: 'Villulla',
+var myrna = {
+    nombre: 'Myrna',
+    apellido: 'Cappiello',
     edad: 38
 }
 
@@ -17,12 +17,11 @@ function imprimirNombreEnMayusculas(persona) {
 }
 
 imprimirNombreEnMayusculas(pablo)
-imprimirNombreEnMayusculas(juan)
+imprimirNombreEnMayusculas(myrna)
 
 function cumpleanos(persona) {
     return {
-        ...persona,
+        ...persona, 
         edad: persona.edad + 1
     }
 }
-
