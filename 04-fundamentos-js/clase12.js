@@ -58,15 +58,24 @@ function imprimirProfesiones(persona){
 
 const MAYORIA_DE_EDAD = 18
 
-//Le asignamos una funcion a una variable
-var esMayorDeEdad = function (persona){
-    return persona.edad >= MAYORIA_DE_EDAD
-}
+//Le asignamos una función a una variable. Se transforma en una función anónima. Otra forma de escribir esto es con un arrow function.
+// const esMayorDeEdad = function (persona){
+//     return persona.edad >= MAYORIA_DE_EDAD
+// }
+
+const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
+//Este tipo de nomenclatura esta de moda
 
 function imprimirSiEsMayorDeEdad(persona) {
     if (esMayorDeEdad(persona)) {
         console.log(`${persona.nombre} es mayor de edad`)
     } else {
         console.log(`${persona.nombre} es menor de edad`)
+    }
+}
+
+function permitirAcceso(persona) {
+    if (!esMayorDeEdad(persona)) {
+        console.log('Acceso denegado')
     }
 }
