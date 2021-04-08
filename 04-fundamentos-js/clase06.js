@@ -4,20 +4,20 @@ var pablo = {
     edad: 42
 }
 
-var juan = {
-    nombre: 'Juan Manuel',
-    apellido: 'Villulla',
+var myrna = {
+    nombre: 'Myrna',
+    apellido: 'Cappiello',
     edad: 38
 }
 
-//Las llaves delimitan un objeto que va a tener atributos. Estos son 'claves' (key) y 'valores' (value)
-
-function imprimirNombreEnMayusculas({ nombre }) { //Deglosar el objeto => ponemos los atributos entre llaves
+function imprimirNombreEnMayusculas( {nombre} ) {
+    //var nombre = persona.nombre.toUpperCase()
     console.log(nombre.toUpperCase())
+    //Si no queremos declarar una nueva funcion
 }
 
 imprimirNombreEnMayusculas(pablo)
-imprimirNombreEnMayusculas(juan)
-// imprimirNombreEnMayusculas({ nombre: 'Pepito' })
-// imprimirNombreEnMayusculas() //No podemos desglosar un objeto si no le pasamos el valor que espera.
-// imprimirNombreEnMayusculas({ apellido: 'Gomez'}) //Tambien va a dar error porque espera otro parámetro.
+imprimirNombreEnMayusculas(myrna)
+imprimirNombreEnMayusculas( {nombre: 'Juan Manuel'}) //Podemos definir un objeto en el parámetro cuando invocamos la función
+// imprimirNombreEnMayusculas( ) si esta vació da error
+// imprimirNombreEnMayusculas( {apellido: 'Villulla'} ) si le pasamos otro parámetro da error
