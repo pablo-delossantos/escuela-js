@@ -6,7 +6,7 @@
  
  var alan = {
      nombre: 'Alan',
-     apellido: 'Perez',
+     apellido: 'Pérez',
      altura: 1.86 
  }
  var martin = {
@@ -36,9 +36,11 @@
      altura: 1.70
  }
 
- var personas = [sacha, alan, martin, dario, vicky, paula, pablo]
+ var personas = [sacha, alan, martin, dario, vicky, paula, pablo] //Array
 
- for (var i = 0; i < personas.length; i++) {
+//Vamos a recorrer para obtener la altura de cada persona
+
+for (var i = 0; i < personas.length; i++) {
     var persona = personas[i]
     console.log(`${persona.nombre} mide ${persona.altura.toFixed(2)} mts.`)
  }
