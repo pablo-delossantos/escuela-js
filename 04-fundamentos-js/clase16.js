@@ -54,6 +54,6 @@ switch (signo) {
         console.log('Para alcanzar sus logros, sepa que la clave es organizarse y no dejar que los objetivos que están en su mente, se diluyan ante cualquier estímulo negativo.')
         break
     default:
-        console.log('No es un signo zodiacal válido')
+        console.log('No es un signo del zodíaco válido')
         break
 }
