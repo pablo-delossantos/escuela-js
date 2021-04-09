@@ -45,12 +45,11 @@ var personasAltas = personas.filter(esAlta)
 //     return persona.altura > 1.8
 // })
 
-//personas.altura = persona.altura * 100
+//persona.altura = persona.altura * 100
 const pasarAlturaACms = persona => ({
     ...persona,
-    apellido: persona.altura * 100
+    altura: persona.altura * 100
 })
-//Es un nuevo objeto distinto a la persona del viejo array
 
 var personasCms = personas.map(pasarAlturaACms)
 
