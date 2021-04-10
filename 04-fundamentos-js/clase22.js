@@ -4,26 +4,23 @@ function Persona(nombre, apellido, altura) {
     this.altura = altura
 }
 
-Persona.prototype.saludar = function () {
+Persona.prototype.saludar = () => {
     console.log(`Hola, me llamo ${this.nombre} ${this.apellido}, mido ${this.altura} mts.`)
 }
 
-Persona.prototype.soyAlto = function (){
-    if (this.altura >= 1.8){
-        console.log(`${this.nombre} es una persona alta` )
-    } else {
-        console.log(`${this.nombre} es una persona baja`)
-    }
-}
+Persona.prototype.soyAlto = () => this.altura > 1.8
 
 //new esta reservada para crear nuevos objetos. Es el equivalente al contructor en otros lenguajes.
 var sacha = new Persona('Sacha', 'Lifszyc', '1.85') 
 var pablo = new Persona('Pablo', 'de los Santos', '1.70')
 var myrna = new Persona('Myrna', 'Cappiello', '1.65')
 
+//Siempre definir los prototipos arriba
 sacha.soyAlto()
 pablo.soyAlto()
 myrna.soyAlto()
+
+
 
 //#######
 
