@@ -37,7 +37,7 @@ var pablo = {
 }
 
 const esAlta = ({ altura }) => altura > 1.8
-const esBaja = ({ altura }) => altura <=1.8
+const esBaja = ({ altura }) => altura <= 1.8
 
 var personas = [sacha, alan, martin, dario, vicky, paula, pablo]
 
