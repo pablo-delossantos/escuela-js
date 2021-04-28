@@ -12,6 +12,11 @@ Persona.prototype.soyAlto = function () {
     return this.altura > 1.8
 }
 
+Persona.prototype.soyBajo = function () {
+  return this.altura < 1.8
+}
+
 var sacha = new Persona('Sacha', 'Lifszyc', '1.85') 
 var pablo = new Persona('Pablo', 'de los Santos', '1.70')
 var myrna = new Persona('Myrna', 'Cappiello', '1.65')
+var juan = new Persona('Juan', 'Almada', '170')
