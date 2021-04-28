@@ -19,4 +19,9 @@ Persona.prototype.soyBajo = function () {
 var sacha = new Persona('Sacha', 'Lifszyc', '1.85') 
 var pablo = new Persona('Pablo', 'de los Santos', '1.70')
 var myrna = new Persona('Myrna', 'Cappiello', '1.65')
+<<<<<<< HEAD
 var juan = new Persona('Juan', 'Almada', '170')
+=======
+
+//this es window, o sea el objeto global dentro del navegador. Es uno de los errores mas comunes en JavaScript. This no es lo que espramos que sea si usamos arrow function. Es decir, cambia quien es this dentro de la función
+>>>>>>> 74e80fade56064e30f36dc1f77bfdd756f47a730
